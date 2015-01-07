@@ -1,8 +1,10 @@
-# -*- coding: utf-8 -*-
 """
+Solves the informs puzzle for battles between 4 players with varying 
+health and attack points.
 Created on Mon Dec 29 10:49:04 2014
 
-@author: rhaberlin
+R. Haberlin
+January 2015
 """
 
 import random
