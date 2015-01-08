@@ -13,8 +13,9 @@ import pandas as pd
 
 field = ['allen','barry','charles','dan']
 score = pd.Series([0,0,0,0],index=field)
+runs = 1000
 
-for r in range(1000):
+for r in range(runs):
     field = ['allen','barry','charles','dan']
     health = pd.Series([10, 12, 16, 18],index=field)
     attack = pd.Series([4, 3, 2, 1],index=field)
@@ -38,6 +39,9 @@ for r in range(1000):
         score['charles'] += 1
     else:
         score['dan'] += 1
-        
+
+print
+print 'After %s runs the standings are:' % runs        
 print score.order(ascending=False)    
+print
 
